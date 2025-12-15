@@ -1,12 +1,17 @@
 {
   "name": "@openjck/prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "John Karahalis' Prettier config",
   "type": "module",
   "exports": "./index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "lint": "npm run format:check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "peerDependencies": {
     "prettier": ">=1.8.2"
